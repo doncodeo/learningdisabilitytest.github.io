@@ -38,10 +38,53 @@ document.addEventListener("scroll", () => {
   }
 });
 
+
+
+
+// $(document).ready(function () {
+//   var submitBtn = $("#submit");
+//   var questions = $(".test_question")
+
+//   submitBtn.click(function (event) {
+//     event.preventDefault()
+ 
+
+
+
+//   })
+
+
+// });
+
+// $('.quiz-main input').filter(':input').each(function(){
+//   console.log("testing .question")
+// });
+
+
+
+
+
 const submitBtn = document.getElementById("submit")
+const radioBtn = document.querySelectorAll("input[name='q1']")
+
+submitBtn.addEventListener("click", function(event){
+  event.preventDefault()
+
+  let findSelected = () => {
+    let selected = document.querySelector("input[name='q1']:checked")
+    console.log(selected)
+  }
+
+  radioBtn.forEach(radioBtn => {
+    radioBtn.addEventListener('click', findSelected)
+  })
+
+    
+  
+  alert()
+})
 
 
-submitBtn.addEventListener("click", function(){ 
-  alert("Result Currently Disabled!!"); 
-});
+// https://www.youtube.com/watch?v=J254pngGt6E
+
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/brainer.png" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Personality-Test</title>
 </head>
 <body>
@@ -34,7 +35,7 @@
                     <h1>PRAISEREPORT</h1>
                 </a>
 
-                <h3>a Personality assessment Test</h3>
+                <h3>a Disability assessment Test</h3>
             </div>
         </ul>
     </nav>
@@ -45,36 +46,38 @@
         <form class="quiz-main" action="">
 
             <div class="questions">
+
                 <div class="quiz-questions">
                     <span class="question-order">1. </span>
                     <p>Do you agree to recognize letters and words?</p>
                 </div>
+
                 <div class="main_wrapper">
                     <div class="button_wrapper">
 
                         <div class="button_container active">
-                            <input type="radio" name="q1" id="q1sa">
-                            <label for="q1sa" class="entry">Strongly Agree</label>
+                            <input type="radio" name="q1" id="">
+                            <label for="q1sa" class="test_question" value="q1true">Strongly Agree</label>
                         </div>
 
                         <div class="button_container">
-                            <input type="radio" name="q1" id="q1a">
-                            <label for="q1a" class="entry">Agree</label>
+                            <input type="radio" name="q1" id="">
+                            <label for="q1a" class="test_question" value="q1true">Agree</label>
                         </div>
 
                         <div class="button_container">
-                            <input type="radio" name="q1" id="q1n">
-                            <label for="q1n" class="entry">Neutral</label>
+                            <input type="radio" name="q1" id="">
+                            <label for="q1n" class="test_question" value="q1neutral">Neutral</label>
                         </div>
 
                         <div class="button_container">
-                            <input type="radio" name="q1" id="q1d">
-                            <label for="q1d" class="entry">Disagree</label>
+                            <input type="radio" name="q1" id="">
+                            <label for="q1d" class="test_question" value="q1wrong">Disagree</label>
                         </div>
 
                         <div class="button_container">
-                            <input type="radio" name="q1" id="q1sd">
-                            <label for="q1sd" class="entry">Strongly Disagree</label>
+                            <input type="radio" name="q1" id="">
+                            <label for="q1sd" class="test_question" value="q1wrong">Strongly Disagree</label>
                         </div>
 
                     </div>
@@ -1098,7 +1101,7 @@
                     </div>
                 </div>
             </div>
-            <!-- start  -->
+            
             <div class="questions">
                 <div class="quiz-questions">
                     <span class="question-order">31. </span>
