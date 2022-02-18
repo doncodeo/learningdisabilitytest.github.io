@@ -40,51 +40,28 @@ document.addEventListener("scroll", () => {
 
 
 
-
-// $(document).ready(function () {
-//   var submitBtn = $("#submit");
-//   var questions = $(".test_question")
-
-//   submitBtn.click(function (event) {
-//     event.preventDefault()
- 
-
-
-
-//   })
-
-
-// });
-
-// $('.quiz-main input').filter(':input').each(function(){
-//   console.log("testing .question")
-// });
-
-
-
-
-
 const submitBtn = document.getElementById("submit")
-const radioBtn = document.querySelectorAll("input[name='q1']")
+const radioBtn = document.querySelectorAll("input[class='test_question']")
 
 submitBtn.addEventListener("click", function(event){
   event.preventDefault()
 
-  let findSelected = () => {
-    let selected = document.querySelector("input[name='q1']:checked")
-    console.log(selected)
-  }
+  alert("result currently disabled!")
 
-  radioBtn.forEach(radioBtn => {
-    radioBtn.addEventListener('click', findSelected)
-  })
+  // console.log(radioBtn.length);
 
-    
+  // radioBtn.forEach(radio => {
+  //   if(radio.checked){
+  //     if(radio.value=="q2true" && radio.value==="q11true") {
+  //       alert("Dyscalculia")
+  //     }
+  //     console.log(radio.value);   
+  //     // alert(radio.value)
+  //   }
+  // })
+
   
-  alert()
 })
 
-
-// https://www.youtube.com/watch?v=J254pngGt6E
 
 
