@@ -57,6 +57,7 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
   localStorage.clear()
+  location.reload()
 }
 
 // When the user clicks anywhere outside of the modal, close it
