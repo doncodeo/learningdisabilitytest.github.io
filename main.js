@@ -358,9 +358,12 @@ btnn.addEventListener("click", function(event){
     alert("no response detected")
   }else{
 
-    console.log(ldData.ldName)
-    alert("Your Response points to"+" "+ldData.ldName)
+    console.log(ldData.ldDes)
+    // alert("Your Response points to"+" "+ldData.ldName)
     display.innerText == ldData.ldName
+    document.getElementById("ldName").innerHTML = ldData.ldName
+    document.getElementById("ldDes").innerHTML = ldData.ldDes
+
   }
 })
 
